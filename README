@@ -1,0 +1,7 @@
+This is just a little thing I wrote allowing me to view my favorite comics without having to go to a dozen newspaper or comics sites to do so.  This is essentially a backup for myself, but if you come across it and like it feel free to use it.
+
+You'll need to run the composer install, create your mysql database, fill in the database section of .env (an example .env.example is included) then run artisan migration to create the comics table in your database.  An example seeder containing seeds for my current comics is stored under database/seeds, but you'll need to create your own for autoloading purposes or you can add the following line to your vendor/composer/autoload_classmap.php file if you'd like to use mine.
+
+    'ComicsTableSeeder' => $baseDir . '/database/seeds/ComicsTableSeeder.php'
+
+
